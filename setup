@@ -1,0 +1,10 @@
+#!/bin/bash
+clear
+echo "Script Setup"
+for file in *.sh ; do
+echo "Moving $file to /usr/local/bin"
+mv $file /usr/local/bin/
+echo "$file moved sucessfully"
+#ln -s /usr/local/bin/$file .
+done
+exit
